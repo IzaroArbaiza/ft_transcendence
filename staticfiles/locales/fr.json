@@ -1,0 +1,112 @@
+{
+	"__comentario1": "playground.html",
+	"nav": {
+		"home": "Accueil",
+		"play": "Jouer",
+		"signin": "Se connecter",
+		"register": "Enregistrer",
+		"select": "Sélectionner",
+		"about": "À propos de nous",
+		"profile": "Profil"
+	},
+
+	"player1_name": "[Nom du joueur 1]",
+	"player2_name": "[Nom du joueur 2]",
+	"player3_name": "[Nom du joueur 3]",
+	"player4_name": "[Nom du joueur 4]",
+
+	"button": {
+		"start": "Démarrer",
+		"pause": "Pause",
+		"close": "Fermer",
+		"save": "Enregistrer les modifications",
+		"submit": "Soumettre",
+		"one_player": "Un joueur",
+		"two_player": "Deux joueurs",
+		"battleground": "Champ bataille",
+		"tournament": "Tournoi"
+	},
+	
+	"high_score": "Meilleur score: ",
+	"score": "Score: ",
+
+	"__comentario2": "about.html",
+	"team": {
+		"title": "Équipe Retropong",
+		"members": {
+			"cesar": {
+				"position": "Survivant de Backcend et de Monitoring.",
+				"description": "Dompteur de Dockers. Aussi connu sous le nom de briseur de code."
+			},
+			"izaro": {
+				"position": "Jeux IA et algorithme Paddle.",
+				"description": "Code pour du chocolat. Ne riez pas, elle peut vous poignarder."
+			},
+			"jeffrey": {
+				"position": "Chef de projet et Scrum master. Testeur QA.",
+				"description": "Chef d'équipe, toujours souriant. Ne se plaint jamais."
+			},
+			"basabe": {
+				"position": "Passionné de Frontend et de Pixel.",
+				"description": "Le dernier Mohican, la légende raconte qu'il a créé la première piscine."
+			}
+		}
+	},
+
+
+	"__comentario3": "index.html",
+	"hero": {
+		"title": "Alors tu te prends pour un maître du pong?",
+		"description": "Donnez tout contre une IA, un autre joueur ou inscrivez-vous à un tournoi",
+		"project": "Projet Retropong, l'expérience arcade à l'ancienne revisitée. Les joueurs rétro sont meilleurs!",
+		"gaming": "Les jeux des années 80, parce que les pixels, c'est cool ! On adore les arcades et les cassettes de musique, à l'ancienne.",
+		"register": "Osez vous inscrire"
+	},
+	"modal": {
+		"title": "Titre de la fenêtre modale",
+		"desc": "Texte à envoyer à la fenêtre modale"
+	},
+
+
+	"__comentario4": "register.html",
+	"form": "Formulaire de connexion",
+	"retrogamer": "Connectez-vous et devenez un rétrogamer",
+	
+
+	"__comentario5": "select.html",
+	"select": "Sélectionner",
+	"choice": "Sélectionner le jeu souhaité",
+
+	
+	"__comentario6": "tournament.html",
+	
+	"__comentario8": "waitlist.html",
+	"waitlist": {
+		"title": "Attente",
+		"select1": "Sélectionner les Judateurs 1vs1",
+		"select2": "Sélectionnez les Judateurs Battleground",
+		"select3": "Sélectionnez les Judateurs Torneo",
+		"select4": "Sélectionnez les Judateurs Tron",
+		"no_players": "Aucun joueur disponible",
+		"you": "Vous"
+	},
+
+	"comentaruio9": "profile.html",
+	"profile": {
+		"title": "Profil",
+		"edit": "Modifier le profil",
+		"information": "Informations",
+		"name": "Nom",
+		"email": "E-mail",
+		"friends": "Amis",
+		"online": "En ligne",
+		"offline": "Hors ligne",
+		"no_friends": "Pas encore d'amis.",
+		"add_friend": "Ajouter un ami",
+		"remove_friend": "Supprimer un ami",
+		"stats": "Statistiques",
+		"victories": "Victoires",
+		"defeats": "Défaites",
+		"tournaments": "Tournois remportés"
+	}
+}

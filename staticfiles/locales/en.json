@@ -1,0 +1,119 @@
+{
+	"__comentario1": "playground.html",
+	"nav": {
+		"home": "Home",
+		"play": "Play",
+		"signin": "Sign in",
+		"register": "Register",
+		"select": "Select",
+		"about": "About us",
+		"profile": "Profile"
+	},
+
+	"player1_name": "[player 1 name]",
+	"player2_name": "[player 2 name]",
+	"player3_name": "[player 3 name]",
+	"player4_name": "[player 4 name]",
+	
+	"button": {
+		"start": "Start",
+		"pause": "Pause",
+		"close": "Close",
+		"save": "Save changes",
+		"submit": "Submit",
+		"one_player": "One Player",
+		"two_player": "Two Players",
+		"battleground": "Battle ground",
+		"tournament": "Tour nament",
+		"back_to_select": "Back to Select"
+	},
+	
+	"high_score": "High score: ",
+	"score": "Score: ",
+
+	"__comentario2": "about.html",
+	"team": {
+		"title": "The Retropong team",
+		"members": {
+			"cesar": {
+				"position": "Backend & Monitoring survivor.",
+				"description": "Dockers tamer. Also known as the code breaker."
+			},
+			"izaro": {
+				"position": "AI gaming & Paddle algorithm.",
+				"description": "Will code for chocolate. Don't laugh, she can stab you."
+			},
+			"jeffrey": {
+				"position": "Project manager & Scrum master. QA tester.",
+				"description": "Is the team leader, always smiles. Never complains."
+			},
+			"basabe": {
+				"position": "Frontend & Pixel enthusiast.",
+				"description": "The last Mohican, the legends say he made the first pool."
+			}
+		}
+	},
+
+
+	"__comentario3": "index.html",
+	"hero": {
+		"title": "So you think you are a pong master",
+		"description": "Try your best against an AI, another player or enroll a tournament  \\",
+		"project": "Retropong project, the old school arcade experience brougth to live. Retro gamers do it better!",
+		"gaming": "80s gaming because Pixel is cool dude! We love arcade and music cassettes, the old school.",
+		"register": "Dare to register"
+	},
+	"modal": {
+		"title": "Modal title",
+		"desc": "Some text to modal you"
+	},
+
+
+	"__comentario4": "register.html",
+	"form": "sign in form",
+	"retrogamer": "Sign in and become a retrogamer",
+	
+
+	"__comentario5": "select.html",
+	"select": "Select",
+	"choice": "Select game choice",
+
+	
+	"__comentario6": "tournament.html",
+
+	"__comentario7": "error.html",
+	"error": {
+        "title": "Error",
+        "no_players": "Not enough players to play in the playground."
+    },
+
+	"__comentario8": "waitlist",
+	"waitlist": {
+		"title": "Waitlist",
+		"select1": "Select 1vs1 Players",
+		"select2": "Select Battleground Players",
+		"select3": "Select Tournament Players",
+		"select4": "Select tron Players",
+		"no_players": "No players available",
+		"you": "You"
+	},
+
+	"comentaruio9": "profile.html",
+	"profile": {
+		"title": "Profile",
+		"edit": "Edit profile",
+		"information": "Information",
+		"name": "Name",
+		"email": "Email",
+		"friends": "Friends",
+		"online": "Online",
+		"offline": "Offline",
+		"no_friends": "No friends yet.",
+		"add_friend": "Add friend",
+		"remove_friend": "Remove friend",
+		"stats": "Statistics",
+		"victories": "Victories",
+		"defeats": "Defeats",
+		"tournaments": "Tournaments won"
+	}
+}
