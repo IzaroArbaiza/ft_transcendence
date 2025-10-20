@@ -1,0 +1,119 @@
+{
+	"__comentario1": "playground.html",
+	"nav": {
+		"home": "Inicio",
+		"play": "Jugar",
+		"signin": "Iniciar sesion",
+		"register": "Registrarse",
+		"select": "Seleccionar",
+		"about": "Acerca de nosotros",
+		"profile": "Perfil"
+	},
+
+	"player1_name": "[Nombre jugador 1]",
+	"player2_name": "[Nombre jugador 2]",
+	"player3_name": "[Nombre jugador 3]",
+	"player4_name": "[Nombre jugador 4]",
+
+	"button": {
+		"start": "Iniciar",
+		"pause": "Pausar",
+		"close": "Cerrar",
+		"save": "Guardar cambios",
+		"submit": "Entregar",
+		"one_player": "Un Jugador",
+		"two_player": "Dos Jugadores",
+		"battleground": "Campo batalla",
+		"tournament": "Torneo",
+		"back_to_select": "Volver a Select"
+	},
+	
+	"high_score": "Puntuaje mas alto: ",
+	"score": "Puntuaje: ",
+
+	"__comentario2": "about.html",
+	"team": {
+		"title": "Equipo Retropong",
+		"members": {
+			"cesar": {
+				"position": "Superviviente de Bakcend y Monitoreo.",
+				"description": "Domador de Dockers. También conocido como el descifrador de códigos."
+			},
+			"izaro": {
+				"position": "Algoritmo de IA para juegos y Paddle.",
+				"description": "Programará por chocolate. No te rías, puede apuñalarte."
+			},
+			"jeffrey": {
+				"position": "Gerente de proyectos y Scrum Master. Tester de QA.",
+				"description": "Es el líder del equipo, siempre sonríe. Nunca se queja."
+			},
+			"basabe": {
+				"position": "Entusiasta del frontend y los píxeles.",
+				"description": "El último mohicano, según la leyenda, hizo la primera piscina."
+			}
+		}
+	},
+
+
+	"__comentario3": "index.html",
+	"hero": {
+		"title": "¿Así que te crees un maestro del pong?",
+		"description": "Dale lo mejor de ti contra una IA, otro jugador o inscríbete en un torneo\\",
+		"project": "Proyecto Retropong, la experiencia arcade de la vieja escuela traída a la vida. ¡Los jugadores retro lo hacen mejor!",
+		"gaming": "¡Juegos de los 80 porque Pixel mola, amigo! Nos encantan los arcades y los casetes de música, la vieja escuela.",
+		"register": "Atrévete a registrarte"
+	},
+	"modal": {
+		"title": "Título del modal",
+		"desc": "Texto para enviarte al modal"
+	},
+
+
+	"__comentario4": "register.html",
+	"form": "Formulario de inicio de sesión",
+	"retrogamer": "Inicia sesión y conviértete en un retrogamer",
+	
+
+	"__comentario5": "select.html",
+	"select": "Seleccionar",
+	"choice": "Seleccionar elección de juego",
+
+	
+	"__comentario6": "tournament.html",
+
+	"__comentario7": "error.html",
+	"error": {
+        "title": "Error",
+        "no_players": "No hay suficientes usuarios para jugar en el playground."
+    },
+
+	"__comentario8": "waitlist.html",
+	"waitlist": {
+		"title": "Espera",
+		"select1": "Selecciona Judadores 1vs1",
+		"select2": "Selecciona Judadores Battleground",
+		"select3": "Selecciona Judadores Torneo",
+		"select4": "Selecciona Judadores Tron",
+		"no_players": "No hay jugadores disponibles",
+		"you": "Tú"
+	},
+
+	"comentaruio9": "profile.html",
+	"profile": {
+		"title": "Perfil",
+		"edit": "Editar perfil",
+		"information": "Información",
+		"name": "Nombre",
+		"email": "Mail",
+		"friends": "Amigos",
+		"online": "En línea",
+		"offline": "Desconectado",
+		"no_friends": "Aún no hay amigos.",
+		"add_friend": "Añade amigos",
+		"remove_friend": "Eliminar amigos",
+		"stats": "Estadisticascas",
+		"victories": "Victorias",
+		"defeats": "Derrotas",
+		"tournaments": "Torneos ganados"
+	}
+}

@@ -1,0 +1,274 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="select">Select</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Honk&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P:wght@400&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    </style>
+    <link rel="shortcut icon" type="image/ico" href="/static/images/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+
+<style>
+  .arcade_botton{
+    position: relative;
+    border-style: double;
+    height: 115px;
+    width: 140px;
+    background-color: rgba(174, 13, 13, 0.966);
+    border: 5px solid rgba(252, 252, 252, 0.771);
+    box-shadow: 0 4px white;
+    color: aqua;
+    font-family: 'Press Start 2P', system-ui;
+    transition: all 0.1s ease;
+  }
+  .arcade_botton:active{
+    top: 5px;
+    box-shadow: 0 2px #666;
+    color: rgb(255, 255, 255);
+    border: 5px solid white;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .videobg {
+    height: 80vh;
+    overflow: hidden;
+    position: relative;
+  }
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+  }
+  .footer_nav{
+    text-decoration: none;
+    font-size: 35px;
+  }
+  .footer_nav:hover{
+    text-decoration:dotted;
+    font-size: 40px;
+  }
+</style>
+
+<body>
+<nav class="navbar navbar-expand-lg border border-5 border-white" style="background: linear-gradient(
+  45deg,
+  hsla(168, 85%, 52%, 0.8),
+  hsla(263, 88%, 45%, 0.7) 100%
+)">
+  <div class="container-fluid" style="color: aqua; ">   
+    <button
+      data-mdb-collapse-init
+      class="navbar-toggler"
+      type="button"
+      data-mdb-target="#header_navbar"
+      aria-controls="header_navbar"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars" style="color: aqua;"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="header_navbar">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="font-family: Pixelify Sans, sans-serif;">
+        <li class="nav-item active">
+          <a class="nav-link"  aria-current="page" href="/" data-i18n="nav.home">Home</a>
+        </li>
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" href="/select" data-i18n="nav.select">Select</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about" data-i18n="nav.about">About</a>
+        </li>
+        {% if user.is_authenticated %}
+        <li class="nav-item">
+          <a class="nav-link" href="/profile" >Profile</a>
+        </li>
+        {% else %}
+          <a
+              data-mdb-ripple-init
+              class="btn btn-outline-light btn-sm m-2"
+              style="font-family: Pixelify Sans, sans-serif; ;"
+              onclick="openSignIn()"
+              role="button"
+              rel="nofollow"
+              target="_blank"
+              >Log in</a>
+        {% endif%}
+        {% if user.is_authenticated %}
+        <li class="nav-item">
+          <a class="nav-link" href="/logout" >Logout</a>
+        </li>
+        {% else %}
+        <li class="nav-item">
+          <a
+          data-mdb-ripple-init
+          class="btn btn-outline-light btn-sm m-2"
+          style="font-family: Pixelify Sans, sans-serif; font-weight: bold;"
+          target="_blank"
+          role="button"
+          onclick="openRegister()"
+          >Register</a>
+          </li>
+        {% endif%}
+      </ul>
+    </div>
+    <select id="language-selector">
+      <option value="en">🇬🇧 English</option>
+      <option value="es">🇪🇸 Español</option>
+      <option value="eu">🇵🇲 Euskera</option>
+      <option value="fr">🇫🇷 Français</option>
+      <option value="fr2">🥐 Clouseau</option>
+    </select>
+  </div>
+</nav>
+
+<script>
+  function openRegister() {
+    window.open("http://localhost:8000/register", "registration form", "width=1200,height=800,left=300,top=100");
+  }
+  function openSignIn() {
+    window.open("http://localhost:8000/signin", "registration form", "width=1200,height=800,left=300,top=100");
+  }
+</script>
+
+  <div class="videobg" >
+    <video autoplay loop muted>
+      <source src="https://www.shutterstock.com/shutterstock/videos/3467987197/preview/stock-footage--k-abstract-pixel-animation-multicolored-digital-background-geometric-of-square-pattern-moving-with.webm" type="video/webm">
+    </video>
+    <div class="row " style="height: 10vw; ">
+      <h1 style="font-size:4vw; font-family: Tourney, sans-serif; color:aqua;" class="d-flex justify-content-center " data-i18n="choice">Select game choice</h1>
+    </div>
+     <div class="row fit-content" style="display: flex; justify-content: space-around;">
+      <div class="col text-center" style="display: flex; justify-content: flex-start; height: 250px; max-width: 200px;">
+        <button class="arcade_botton border-5 rounded-circle" onclick="start1vsIA()">One Player</button>
+        <script>
+          async function start1vsIA() {
+            try {
+              const response = await fetch('/duplicate_1vsIA/', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json', 'X-CSRFToken': getCookie('csrftoken'),},
+              });
+              const data = await response.json();
+              if (response.ok) {
+                window.location.href = data.redirect_url;
+              } else {
+                console.error("Error:", data.error);
+                alert("Error: " + data.error);
+              }
+            } catch (error) {
+              console.error("Error en la conexión:", error.message);
+              alert("Error en la conexión: " + error.message);
+            }
+          }
+          function getCookie(name) {
+            let cookieValue = null;
+            if (document.cookie && document.cookie !== '') {
+              const cookies = document.cookie.split(';');
+              for (let cookie of cookies) {
+                cookie = cookie.trim();
+                if (cookie.startsWith(name + '=')) {
+                  cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                  break;
+                }
+              }
+            }
+            return cookieValue;
+          }
+        </script>
+      </div>
+      <div class="col text-center" style="display: flex; justify-content: center; height: 250px; max-width: 200px;">
+        <button class="arcade_botton border-5 rounded-circle" onclick="window.location.href='/tmp1vs1'">Two Players</button>
+      </div>
+      <div class="col text-center" style="display: flex; justify-content: flex-end; height: 250px; max-width: 200px;">
+        <button class=" arcade_botton border-5 rounded-circle" onclick="window.location.href='/tmpbattleground'" data-i18n="button.battleground">Battle ground</button>
+      </div>
+    </div>
+    <div class="row fit-content" style="display: flex; justify-content: space-around; margin-bottom: 8%;">
+      <div class="col text-center" style="display: flex; justify-content: flex-end; height: 250px; max-width: 200px; font-family: Pixelify Sans, sans-serif;">
+        <button class="arcade_botton border border-5  rounded-circle" onclick="window.location.href='/tmptournament'"  data-i18n="button.tournament">Tour nament</button>
+      </div>
+      <div class="col text-center" style=" display: flex; justify-content: flex-start; height: 250px; max-width: 200px;font-family: Pixelify Sans, sans-serif;" >
+        <button class="arcade_botton border-5 rounded-circle" onclick="window.location.href='/tmptron'">Tron</button>
+      </div>
+    </div>      
+  </div>
+
+  <footer class="text-center text-white" style="margin-top: -50px ;background-image: url('https://cdn.dribbble.com/userupload/28311765/file/original-b3d1b68257e6c14b3eca96fc95f0649c.gif');background-repeat: no-repeat; background-size: cover ;background-position: center center;";>
+    <div class="container">
+      <section class="mt-5" style="height: 50px;">
+        <div class="row text-center d-flex justify-content-center pt-3" style="font-family: Honk, system-ui;">
+          <div class="col-md-3">
+            <h6 class="footer_nav">
+              <a class="nav-link" href="/" data-i18n="nav.home">Home</a>
+            </h6>
+          </div>
+          <div class="col-md-3">
+            <h6 class="footer_nav">
+              {% if user.is_authenticated %}
+                <a class="nav-link" href="/logout">Logout</a>
+              {% else %}
+                <a
+                  data-mdb-ripple-init
+                  class="button btn-lm m-2"
+                  style="text-decoration: none; display: flex; align-items: flex-end;"
+                  onclick="openSignIn()"
+                  role="button"
+                  rel="nofollow"
+                  target="_blank"
+                  >Log in</a>
+              {% endif %}
+            </h6>
+          </div>
+          <div class="col-md-3">
+            <h6 class="footer_nav">
+              <a class="nav-link" href="/select" data-i18n="nav.select">Select</a>
+            </h6>
+          </div>
+          <div class="col-md-3">
+            <h6 class="footer_nav">
+              <a class="nav-link" href="/about" data-i18n="nav.about">About us</a>
+            </h6>
+          </div>
+        </div>
+      </section>
+
+      <hr class="my-2" />
+
+      <section class="mb-5">
+        <div class="row d-flex justify-content-center pt-3">
+          <div class="col-lg-10">
+            <p style="font-family: Honk, system-ui; font-size: 30px;">
+              Lorem ipsum transcendece sit amet retropong adipisicing arcade. Sunt pong arena repellat quaerat voluptatibus placeat nam,
+              common-core pariatur est quia magnam 42 Urduliz, ommnia est bytes.
+            </p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2025 Copyright:
+      <a class="text-white" href="https://en.wikipedia.org/wiki/Pong">Retropong</a>
+    </div>
+  </footer>
+  <script src="{% static 'i18n.js' %}"></script>
+</body>
+</html>
+
